@@ -121,7 +121,7 @@
     backdrop-filter: blur(10px); /* Blur the background */
     position:relative;
     border-radius: var(--border-radius);
-    border: #f0f0f0 solid 0,5px;
+    border: #f0f0f0 solid 1px;
     top: 0;
     left: 0;
     z-index: 1;
