@@ -20,7 +20,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
 document.getElementById('register-form').addEventListener('submit', register);
-document.getElementById('login-form').addEventListener('submit', login);
+
 
 // Function to login a user
 function login(email, password) {
