@@ -1,4 +1,3 @@
-import firebase, { auth } from './firebaseConfig.js';
 
 function signIn(email, password) {
     auth.signInWithEmailAndPassword(email, password)
