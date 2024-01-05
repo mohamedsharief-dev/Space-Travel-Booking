@@ -1,4 +1,4 @@
-# Space-Travel-Brochure-Webpage
+# Space-Travel-Booking
 
 <a href="https://space-travel-brochure-webpage.netlify.app/">VISIT LIVE DEPLOYMENT</a>
 
