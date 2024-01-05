@@ -19,6 +19,7 @@ async function login(email, password) {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
     console.log("User logged in: ", user);
+    window.location.href = '/index.html';
   } catch (error) {
     console.error("Error signing in with password and email", error);
   }
