@@ -1,0 +1,296 @@
+
+@font-face {
+    font-family: mainFont;
+    src: url(fonts/Glancyr\ Variable-VF.ttf);
+}
+
+:root {
+    --main-font: 'mainFont', sans-serif;
+    --background-color: #1e1f20;
+    --text-color: aliceblue; 
+    --border-radius: 45px;
+}
+
+.bodyMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: mainFont;
+    color: var(--text-color);
+}
+
+.leftContent {   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+    height: 100%;
+    padding: 25px;
+}
+
+.rightContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+}
+
+.leftContent1 {   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 25px;
+}
+
+.rightContent1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+}
+
+.tripSingleItem { 
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.imageitem {
+    width: 100%;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.2) ;
+    border: solid 1px #ffffff  ;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+
+.sectionDescription{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 25px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.buttonLight {
+    background-color: #f0f0f0; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    font-weight: normal; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.buttonDark {
+    background-color: transparent; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: solid 1px #ffffff; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    font-weight: normal;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2); 
+}
+.buttonLight:hover {
+    background-color: #e0e0e0; 
+    color: #333; 
+}
+.navCont {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;        
+    padding-left: 10%;
+    padding-right: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    position:relative;
+    border-radius: var(--border-radius);
+    border: #f0f0f0 solid 1px;
+    top: 10px;
+    left: 0;
+    z-index: 10px;
+}
+.navList { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+
+
+}
+.logo{
+    
+    width: 15%;
+    height: auto;
+}
+.navItem {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: var(--text-color);
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.departureDates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price {
+
+    color: aquamarine;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer-logo img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.footericonlinks  {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url('/assets/images/heroImage.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.heroText {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px); 
+    padding: 25px;
+    border: #f0f0f0 solid 1px;
+  
+    
+}
+
+.registrationSection {
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1f20;
+    color: #fff;
+}
+
+.formCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px); 
+    border: #f0f0f0 solid 1px;
+    
+}
