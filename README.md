@@ -19,7 +19,5 @@ Vanilla JavaScript for interactive elements and dynamic content manipulation.
 Objective:
 The primary goal of this project is to practice and showcase my skills in front-end web development, specifically in creating responsive and interactive web pages. It's a demonstration of my ability to integrate content, design, and functionality in a cohesive and engaging way.
 
-
-Currently, this project is in development stage. 
-
-Regular updates and enhancements are being made as I experiment with new techniques and add more features.
+Project Status:
+Currently, this project is in [development/complete] stage. Regular updates and enhancements are being made as I experiment with new techniques and add more features.
