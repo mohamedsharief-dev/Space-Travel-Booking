@@ -19,18 +19,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
+document.getElementById('register-form').addEventListener('submit', register);
 
-// Function to register a new user
-function register(email, password) {
-  createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // The user has been registered and is signed in!
-      console.log("User registered: ", userCredential.user);
-    })
-    .catch((error) => {
-      console.error("Error registering user: ", error);
-    });
-}
+
 
 // Function to login a user
 function login(email, password) {
@@ -49,6 +40,21 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     console.log("User is logged in: ", user);
   } else {
-    console.log("No user is logged in.");
+    console.log("No users is logged in.");
   }
 });
+
+function register(e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            alert("User registered: " + userCredential.user.email);
+        })
+        .catch((error) => {
+            alert("Error registering user: " + error.message);
+        });
+}
