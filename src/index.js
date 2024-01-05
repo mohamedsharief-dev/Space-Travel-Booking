@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,4 +20,35 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
 
+// Function to register a new user
+function register(email, password) {
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // The user has been registered and is signed in!
+      console.log("User registered: ", userCredential.user);
+    })
+    .catch((error) => {
+      console.error("Error registering user: ", error);
+    });
+}
 
+// Function to login a user
+function login(email, password) {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // The user is signed in!
+      console.log("User logged in: ", userCredential.user);
+    })
+    .catch((error) => {
+      console.error("Error logging in: ", error);
+    });
+}
+
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log("User is logged in: ", user);
+  } else {
+    console.log("No user is logged in.");
+  }
+});
