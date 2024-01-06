@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     bundle: './src/index.js',
     bundleLogin: './src/login.js',
+    bundleSpline: './src/spline.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
