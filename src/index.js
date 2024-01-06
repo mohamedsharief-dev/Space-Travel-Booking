@@ -1,13 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword,} from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDjoXCuxMjt9T4SiPJCeeYR5ZeEj06TlHs",
   authDomain: "spacetravel-5de7a.firebaseapp.com",
@@ -17,14 +12,12 @@ const firebaseConfig = {
   appId: "1:837488187883:web:55668ad1dc38157984e1ae"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
 
 document.getElementById('register-form').addEventListener('submit', register);
-
-
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
@@ -33,8 +26,6 @@ onAuthStateChanged(auth, (user) => {
     console.log("No users is logged in.");
   }
 });
-
-
 
 async function register(e) {
     e.preventDefault();
