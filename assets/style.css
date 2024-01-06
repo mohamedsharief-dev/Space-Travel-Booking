@@ -292,6 +292,23 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     width: 300px;
+    height: 525px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: rgba(25, 25, 25, 0.971);
+    backdrop-filter: blur(5px);
+    border: #f0f0f0 solid 1px;
+    box-shadow: 0px 24px 28px 0px rgba(0,0,0,0.2); 
+ 
+
+}
+.formCont1 {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
     height: 350px;
     border-radius: 10px;
     padding: 25px;
