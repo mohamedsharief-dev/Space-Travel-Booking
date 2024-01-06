@@ -2,37 +2,75 @@
 <html>
 <head>
     <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://kit.fontawesome.com/e6a78a7701.js" crossorigin="anonymous"></script>
     <title>Registration Page</title>
 </head>
 <body class="bodyMain">
-    <div class="navCont">
-        <nav class="navBar">
-            <img class="logo" src="/assets/images/logo.png" alt="logo">
-            <ul class="navList">
-                <li class="navItem"><a href="#">Home</a></li>
-                <li class="navItem"><a href="#">Our Ships</a></li>
-                <li class="navItem"><a href="#">Team</a></li>
-                <li class="navItem"><a href="#">About</a></li>
-            </ul>
-            <a href="/src/login.html">
-                <button style="width: 150px;" class="buttonLight">
-                  <i class="fa-regular fa-user" style="margin-right: 4px;"></i> Log In
-                </button>
-              </a>
-          <a href="/src/registration.html"><button style="width: 150px;" class="buttonDark">Get Started</button></a>
-        </nav>
-        </div>
-    <div class="registrationSection" >
-    <h2>Login</h2>
+  <div class="navCont">
+      <nav class="navBar">
+          <img class="logo" src="/assets/images/logo.png" alt="logo">
+          <ul class="navList">
+              <li class="navItem"><a href="/index.html">Home</a></li>
+              <li class="navItem"><a href="#">Our Ships</a></li>
+              <li class="navItem"><a href="#">Team</a></li>
+              <li class="navItem"><a href="#">About</a></li>
+          </ul>
+          
+        <a href="/src/registration.html"><button style="width: 180px;" class="buttonLight"><i class="fa-regular fa-life-ring" style="margin-right: 15px;"></i>Get Support</button></a>
+      </nav>
+      </div>
+  <div class="registrationSection" >
+      <div class="regLeft">
+          <div class="regText">
 
-    <form class="formCont" id="login-form">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" required><br>
-        <button type="submit">Log In</button>
-    </form>
+          <h2>Log in to your account</h2>
+          <p style="font-size: 1.3rem; line-height: 30px; font-weight: 200; ">Dont Have an account ? <a style="font-weight: 600;" href="/src/registration.html">Sign Up Now</a>
+              <br>
+              <br>
+          
+              Having Trouble with Registration or Signing In? <br>
+              <br>
+
+              We're here to help! If you're encountering any difficulties during the registration process or while signing in, don't worry. We've got a couple of options for you:
+              <br>
+              <br>
+              
+              Check Our <a style="color: rgb(88, 133, 196);" href="">Documentation</a>: Sometimes a quick look at our User Guide can solve the common issues you might face. It's packed with step-by-step instructions and helpful tips to guide you through.
+             </p>
+      </div>
+      </div>
+      <div class="regRight"  >
+          <form class="formCont" id="login-form">
+              <label class="inputLabel" for="email">Email:</label><br>
+              <input class="inputBar" type="email" placeholder="Your@email.com" id="email" required><br>
+              <label class="inputLabel" for="password">Password:</label><br>
+              <input class="inputBar" type="password" placeholder="*****" id="password" required><br>
+              <div class="departureDates" style="margin-top: 19px;" >
+                <a href="/src/booking.html"><button class="buttonLight" style="margin-right: 10px;"><i class="fa-solid fa-right-to-bracket" style="margin-right: 15px;"></i>Log In</button></a>
+                <button class="buttonDark">Sign Up</button>
+            </div>
+            <p>  Trouble Signing Up ? <a style="font-weight: 600; color: rgb(88, 133, 196)" href="/src/login.html">Reset Password</a></p>
+          </form>
+      </div>
+</div>
+<footer>
+  <div class="footer-container">
+      <div class="footer-logo">
+          <img src="/assets/images/logo.png" alt="Your Logo">
+      </div>
+      <div class="footer-links">
+          <a href="#">Resources</a>
+          <a href="#">Docs</a>
+          <a href="#">Style Guide</a>
+          <a href="#">Repo </a>
+      </div>
+      <div class="footer-social">
+          <a class="footericonlinks" href="#"><i class="fa-brands fa-twitter"></i> Twitter or X </a>
+          <a class="footericonlinks" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="footericonlinks" href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+      </div>
   </div>
+</footer>
   <script type="module" src="/dist/bundleLogin.js"> </script>
 </body>
 </html>
