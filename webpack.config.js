@@ -6,8 +6,7 @@ module.exports = {
   devtool: 'eval-source-map',
   entry: {
     bundle: './src/index.js',
-    bundleLogin: './src/login.js',
-    bundleSpline: './src/spline.js',
+    bundleLogin: './src/login.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
