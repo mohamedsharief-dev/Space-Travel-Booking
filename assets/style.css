@@ -3,6 +3,29 @@
     font-family: mainFont;
     src: url(fonts/Glancyr\ Variable-VF.ttf);
 }
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 2px solid #5d5d5d;
+    width: 300px;
+}
+
+/* Enhancing the radio buttons and checkboxes with custom styling */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #4e54c8;
+}
+
+#search-space-flights {
+    /* [Previous Styles for Button] */
+    margin-top: 10px;
+}
 
 :root {
     --main-font: 'mainFont', sans-serif;
@@ -70,6 +93,18 @@
     justify-content: space-evenly; 
     align-items: center;
     padding: 10%;
+}
+
+.heroLeftDiv {   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .imageitem {
@@ -193,10 +228,7 @@
     color: var(--text-color);
     text-decoration: none;
 }
-a {
-    text-decoration: none;
-    color: var(--text-color);
-}
+
 
 .departureDates {
     display: flex;
@@ -210,7 +242,7 @@ a {
     color: aquamarine;
 }
 
-footer {
+.footer {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
@@ -514,21 +546,3 @@ height: auto;
     gap: 5px;
 }
 
-select {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #fff;
-    border: 2px solid #5d5d5d;
-    width: 300px;
-}
-
-/* Enhancing the radio buttons and checkboxes with custom styling */
-input[type="radio"], input[type="checkbox"] {
-    accent-color: #4e54c8;
-}
-
-#search-space-flights {
-    /* [Previous Styles for Button] */
-    margin-top: 10px;
-}
