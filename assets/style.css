@@ -8,7 +8,7 @@
     --main-font: 'mainFont', sans-serif;
     --background-color: #1e1f20;
     --text-color: aliceblue; 
-    --border-radius: 45px;
+    --border-radius: 10px;
 }
 
 .bodyMain {
@@ -45,10 +45,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
+    align-items: start;
+    width: 100%;
     height: 100%;
     padding: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .rightContent1 {
@@ -100,7 +102,7 @@
     color: #000; 
     padding: 15px 30px;
     border: none; 
-    border-radius: 45px; 
+    border-radius: 10px; 
     font-size: 16px; 
     font-weight: normal; 
     text-align: center; 
@@ -116,7 +118,7 @@
     color: #ffffff; 
     padding: 15px 30px;
     border: solid 1px #ffffff; 
-    border-radius: 45px; 
+    border-radius: 10px; 
     font-size: 16px; 
     font-weight: normal;
     text-align: center; 
@@ -256,17 +258,16 @@ footer {
     background-position: center;
 }
 .heroText {
-    width: 90%;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.027);
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
     padding: 25px;
     border: #f0f0f0 solid 1px;
-  
     
 }
 
@@ -416,7 +417,7 @@ height: auto;
 .inputBar {
   
     background: transparent;
-    border-radius: 45px;
+    border-radius: 10px;
     color: #fff;
     padding-left: 18px;
     padding-top: 18px;
@@ -431,9 +432,9 @@ height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to right, #000000, #363636, #131313);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     flex-wrap: wrap;
@@ -456,9 +457,9 @@ height: auto;
 }
 
 #space-flight-finder button {
-    background-color: #4e54c8;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 2px solid #ffffff;
     padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -466,7 +467,8 @@ height: auto;
 }
 
 #space-flight-finder button:hover {
-    background-color: #8a2be2;
+    background-color: white;
+    color: #000;
 }
 
 .trip-type, .accommodations {
