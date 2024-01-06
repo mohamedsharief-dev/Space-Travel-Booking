@@ -82,7 +82,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -91,7 +91,8 @@
     font-weight: 200;
     line-height: 25px;
     margin-bottom: 20px;
-    width: 75%;
+    width: 100%;
+    text-align: start;
 }
 
 .buttonLight {
@@ -425,4 +426,76 @@ height: auto;
     border: solid 1px #ffffff  ;    
     
 
+}
+#space-flight-finder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+#space-flight-finder input[type="text"], #space-flight-finder input[type="date"] {
+    padding: 10px;
+    border: 2px solid #5d5d5d;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+#space-flight-finder input::placeholder {
+    color: #bbb;
+}
+
+#space-flight-finder input[type="date"] {
+    color: #ddd;
+}
+
+#space-flight-finder button {
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#space-flight-finder button:hover {
+    background-color: #8a2be2;
+}
+
+.trip-type, .accommodations {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+.trip-type label, .accommodations label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 2px solid #5d5d5d;
+}
+
+/* Enhancing the radio buttons and checkboxes with custom styling */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #4e54c8;
+}
+
+#search-space-flights {
+    /* [Previous Styles for Button] */
+    margin-top: 10px;
 }
