@@ -22,11 +22,6 @@ input[type="radio"], input[type="checkbox"] {
     accent-color: #4e54c8;
 }
 
-#search-space-flights {
-    /* [Previous Styles for Button] */
-    margin-top: 10px;
-}
-
 :root {
     --main-font: 'mainFont', sans-serif;
     --background-color: #1e1f20;
@@ -98,20 +93,19 @@ input[type="radio"], input[type="checkbox"] {
     padding-bottom: 45px;
 }
 
-.heroLeftDiv {   
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-    width: 46%;
-    height: 100%;
-}
-.heroRightDiv {
+.heroFinderDiv {   
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 54%;
+    max-width: 56.5rem;
+}
+.heroResultsDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: 100%;
 }
 
@@ -287,21 +281,30 @@ input[type="radio"], input[type="checkbox"] {
 
 .heroSection {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
     width: 100%;
-    height: 100vh;
-    background-image: url('/assets/images/heroImage.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    height: 100%;
+    padding: 10%;
 }
+
+.finderSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 5% ;
+}
+
+
 .heroText {
-    width: 560px;
-    height: 515px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,9 +312,8 @@ input[type="radio"], input[type="checkbox"] {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.435);
     backdrop-filter: blur(5px);
-    padding: 25px;
     border: #f0f0f0 solid 1px;
-    margin-top: -100px;
+
     
 }
 .heroText1 {
@@ -326,7 +328,7 @@ input[type="radio"], input[type="checkbox"] {
     backdrop-filter: blur(5px);
     padding: 25px;
     border: #f0f0f0 solid 1px;
-    margin-top: -100px;
+    
     
 }
 
@@ -511,27 +513,38 @@ height: auto;
     
 
 }
-#space-flight-finder {
+
+.finderButtonDiv {
+ 
     display: flex;
-    width: 530px;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -15px;
+
+}
+
+#space-flight-finder {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    grid-column-gap: 0.25rem;
+    column-gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background: linear-gradient(to right, #000000, #363636, #131313);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    flex-wrap: wrap;
     
 }
 
 #space-flight-finder input[type="text"], #space-flight-finder input[type="date"] {
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #5d5d5d;
     border-radius: 5px;
     background-color: #1e1e1e;
     color: #fff;
-    width: 238px;
+    
 }
 
 #space-flight-finder input::placeholder {
@@ -546,7 +559,7 @@ height: auto;
     background-color: transparent;
     color: white;
     border: 2px solid #ffffff;
-    padding: 12px 20px;
+    padding: 20px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -571,3 +584,29 @@ height: auto;
     gap: 5px;
 }
 
+
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: start;
+    color: #000;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .tripContentItem {
+
+    width: 100%;
+
+  }

@@ -9,147 +9,130 @@
     
 </head>
 <body class="bodyMain">
-    <div class="navCont">
-    <nav class="navBar">
-        <img class="logo" src="/assets/images/logo.png" alt="logo">
-        <ul class="navList">
-            <li class="navItem"><a href="#">Home</a></li>
-            <li class="navItem"><a href="#">Our Ships</a></li>
-            <li class="navItem"><a href="#">Team</a></li>
-            <li class="navItem"><a href="#">About</a></li>
-        </ul>
-        <a href="/src/login.html">
-            <button style="width: 132px;" class="buttonLight">
-                <i class="fa-solid fa-right-to-bracket" style="margin-right: 5px;"></i> Log In
-            </button>
-          </a>
-      <a href="/src/registration.html"><button style="width: 180px;" class="buttonDark"> <i class="fa-brands fa-space-awesome" style="margin-right: 15px;"></i>Get Started</button></a>
-    </nav>
-    </div>
-<section class="heroSection">
-    <div class="heroLeftDiv">
 
-        <div class="heroText">
-            <h1 class="sectionTitle" style="font-size: 3em; text-align: center; text-align: start;">Book Your Next <br>
-                Interstellar Adventure</h1>
-            <div id="space-flight-finder">
-                <!-- Origin and Destination -->
-                <input type="text" id="origin" placeholder="Departure Station">
-                <input type="text" id="destination" placeholder="Destination Planet">
-            
-                <!-- Date Pickers -->
-                <input type="date" id="departure-date">
-                <input type="date" id="return-date">
-            
-                <!-- Trip Type Selection -->
-                <div class="trip-type">
-                    <label><input type="radio" name="trip-type" value="one-way"> One-Way</label>
-                    <label><input type="radio" name="trip-type" value="round-trip" checked> Round-Trip</label>
-                </div>
-            
-                <!-- Spacecraft Selection -->
-                <select id="spacecraft">
-                    <option value="">Select Spacecraft</option>
-                    <option value="starship">Starship</option>
-                    <option value="falcon-heavy">Falcon Heavy</option>
-                    <option value="orion">Orion</option>
-                    <option value="dragon">Dragon</option>
-                </select>
-            
-                <!-- Special Accommodations -->
-                <div class="accommodations">
-                    <label><input type="checkbox" id="zero-gravity-experience"> Zero Gravity Experience</label>
-                    <label>
-                    <label><input type="checkbox" id="mars-rover-tour"> Mars Rover Tour</label>
-                </div>
-            
-                <!-- Search Button -->
-                <button id="search-space-flights">Book My Space Tour</button>
-            </div>
-            
-                <p class="sectionDescription" style="font-size: 1.2em; text-align: start !important; width: 100%;">Galactic Getaways offers the best vacation packages in the solar system. From the
-                    moons of Jupiter to the rings of Saturn, we have it all. Book your next adventure today!</p>
-        </div>
+    <section class="finderSection">
 
+        <div class="heroFinderDiv">
 
-    </div>
-        
-    </div>
-   <div class="heroRightDiv">
-    <div class="heroText1">
-        <h1 class="sectionTitle" style="font-size: 3em; text-align: center; text-align: start;">Book Your Next <br>
-            Interstellar Adventure</h1>
-        <div id="space-flight-finder">
+       
+      
             <!-- Origin and Destination -->
-            <input type="text" id="origin" placeholder="Departure Station">
-            <input type="text" id="destination" placeholder="Destination Planet">
-        
-            <!-- Date Pickers -->
-            <input type="date" id="departure-date">
-            <input type="date" id="return-date">
-        
-            <!-- Trip Type Selection -->
-            <div class="trip-type">
+                <div id="space-flight-finder">
+                    <div style="width: 800px;">
+                      <h1 ">Book Your Next <br>
+                    Interstellar Adventure</h1>
+                </div>
+                <div>
+                    <input type="text" id="origin" placeholder="Departure Station">
+                    <input type="text" id="destination" placeholder="Destination Planet">
+                
+                    <!-- Date Pickers -->
+                    <input type="date" id="departure-date">
+                    <input type="date" id="return-date">    
+                    
+               </div>
+                  <!-- Search Button -->
+                <button style="width: 100px; " id="search-space-flights">Search</button>
+            
+               <div style="margin-top: 10px;" class="trip-type">
                 <label><input type="radio" name="trip-type" value="one-way"> One-Way</label>
                 <label><input type="radio" name="trip-type" value="round-trip" checked> Round-Trip</label>
             </div>
-        
-            <!-- Spacecraft Selection -->
-            <select id="spacecraft">
-                <option value="">Select Spacecraft</option>
-                <option value="starship">Starship</option>
-                <option value="falcon-heavy">Falcon Heavy</option>
-                <option value="orion">Orion</option>
-                <option value="dragon">Dragon</option>
-            </select>
-        
-            <!-- Special Accommodations -->
-            <div class="accommodations">
-                <label><input type="checkbox" id="zero-gravity-experience"> Zero Gravity Experience</label>
-                <label>
-                <label><input type="checkbox" id="mars-rover-tour"> Mars Rover Tour</label>
-            </div>
-        
-            <!-- Search Button -->
-            <button id="search-space-flights">Book My Space Tour</button>
+                     <!-- Special Accommodations -->
+        <div style="margin-top: 10px;" class="accommodations">
+            <label><input type="checkbox" id="zero-gravity-experience"> Zero Gravity Experience</label>
+            <label>
+            <label><input type="checkbox" id="mars-rover-tour"> Mars Rover Tour</label>
         </div>
-        
-            <p class="sectionDescription" style="font-size: 1.2em; text-align: start !important; width: 100%;">Galactic Getaways offers the best vacation packages in the solar system. From the
-                moons of Jupiter to the rings of Saturn, we have it all. Book your next adventure today!</p>
-    </div>
     
+            
+    
+    
+        </div>
+            
+        </div>
+
+    </section>
+  
+<section class="heroSection">
+   <div class="heroResultsDiv">
+    <div class="grid-container">
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>  
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>  
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img class="imageitem" src="/assets/images/First.png" alt="">
+            <div class="tripContentItem">
+            <h3>Roadtrip</h3>
+            <p>Per Person --- 120,000$USD</p>
+            <p>zero gravity experience</p>
+            </div>
+        </div>  
+      </div>
    </div>
 </section>
-<section class="tripSingleItem">
-    <div class="leftContent">
-    <h2 class="sectionTitle">
-        Ringside Expidition: A Jupiter Spectacular
-    </h2>
-    <p class="sectionDescription">
-        Get up close and personal with Saturn's majestic rings. Our exclusive space yacht, The Ring Dancer, offers guided tours through the A and B rings. Witness the awe-inspiring beauty of ice particles shimmering in the sunlight. A must-visit for any cosmic explorer!
-    </p>
-    <div class="departureDates">
-        <h3 style="margin-right: 20px;"><i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>  Next Departures</h3><p> January / 3rd / 2024</p>
-    </div>
-    <div class="departureDates" style="margin-top: -20px;">
-        <h3 style="margin-right: 20px;"> <i class="fa-brands fa-space-awesome" style="margin-right: 4px;"></i> Space Ship</h3><p> Falcon F9 by SpaceX</p>
-    </div>
-    <p>
-        price: <span class="price">$120,000 USD</span> per person
-    </p>
-    <div class="departureDates" style="margin-top: 19px;" >
-        <a href="/src/booking.html"><button class="buttonLight" style="margin-right: 10px;">Begin Booking</button></a>
-    <button class="buttonDark">Learn More</button>
-</div>
-    </div>
 
-    <div class="rightContent">
-        
-<img class="imageitem" src="assets/images/First.png" alt="">
-
-    </div>
-
-</section>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
