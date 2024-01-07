@@ -34,7 +34,7 @@ select {
     justify-content: center;    
     align-items: start;    
     width: 100%;
-    height: 500px; 
+    height: 450px; 
     background-image: url('/assets/images/PromoImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +133,7 @@ input[type="radio"], input[type="checkbox"] {
     max-width: 100%;
 }
 .heroResultsDiv {
-    display: grid;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: start;
@@ -666,7 +666,7 @@ height: auto;
     width: 99%;
   }
 
-  .grid-container1 {
+  .tripCategories {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 40px;
