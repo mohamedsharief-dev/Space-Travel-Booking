@@ -118,7 +118,7 @@ input[type="radio"], input[type="checkbox"] {
     max-width: 100%;
 }
 .heroResultsDiv {
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -299,11 +299,11 @@ input[type="radio"], input[type="checkbox"] {
 .heroSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 5rem;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     padding: 5%;
     padding-left: 17%;
     padding-right: 17%;
@@ -633,7 +633,7 @@ height: auto;
     display: grid;
     gap: 2rem;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    
   }
   
   .grid-item {
@@ -644,7 +644,29 @@ height: auto;
     text-align: start;
     color: #000;
     border-radius: 10px;
+    width: 99%;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    padding: 10px;
     width: 100%;
+
+  }
+  .grid-item1 {
+    background-color: #0B3D91;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+     font-weight: 200; 
+     display: flex; 
+     justify-content: center;
+      align-items: center;
+      line-height: 25px;
   }
 
   .tripContentItem {
