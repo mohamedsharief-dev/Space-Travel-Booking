@@ -8,6 +8,17 @@ a {
     color: var(--text-color);
 }
 
+p {
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 select {
     padding: 10px;
     border-radius: 5px;
@@ -21,10 +32,11 @@ select {
 input[type="radio"], input[type="checkbox"] {
     accent-color: #4e54c8;
 }
-
-#search-space-flights {
-    /* [Previous Styles for Button] */
-    margin-top: 10px;
+.pricediv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 :root {
@@ -98,22 +110,19 @@ input[type="radio"], input[type="checkbox"] {
     padding-bottom: 45px;
 }
 
-.heroLeftDiv {   
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-    width: 50%;
-    height: 100%;
-    padding: 25px;
- 
-}
-.heroRightDiv {
+.heroFinderDiv {   
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    max-width: 100%;
+}
+.heroResultsDiv {
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
     height: 100%;
 }
 
@@ -122,7 +131,7 @@ input[type="radio"], input[type="checkbox"] {
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.2) ;
-    border: solid 1px #ffffff  ;
+    
 }
 
 .sectionTitle {
@@ -186,8 +195,8 @@ input[type="radio"], input[type="checkbox"] {
     flex-direction: row;
     justify-content: center;    
     align-items: center;        
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 17%;
+    padding-right: 17%;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -263,7 +272,7 @@ input[type="radio"], input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 17%;
 }
 
 .footer-logo img {
@@ -289,20 +298,72 @@ input[type="radio"], input[type="checkbox"] {
 
 .heroSection {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 150vh;
+    padding: 5%;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+.finderNavigation {
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navItems {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: end;
+
+
+}
+
+.finderSection {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+width: 100%;
+height: 100%;
+padding-top: 5%;
+padding-left: 17%;
+padding-right: 17%;
+padding-bottom: 3%;
+background: url('/assets/images/heroImage.png'), linear-gradient(to right, #000000, #363636, #131313);
+background-size: cover; /* ensures the image covers the entire element */
+background-position: center; /* centers the background image */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.heroText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: url('/assets/images/heroImage.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.435);
+    backdrop-filter: blur(5px);
+    border: #f0f0f0 solid 1px;
+
+    
 }
-.heroText {
-    width: 560px;
+.heroText1 {
+    width: 800px;
     height: 515px;
     display: flex;
     flex-direction: column;
@@ -313,7 +374,7 @@ input[type="radio"], input[type="checkbox"] {
     backdrop-filter: blur(5px);
     padding: 25px;
     border: #f0f0f0 solid 1px;
-    margin-top: -100px;
+    
     
 }
 
@@ -498,27 +559,36 @@ height: auto;
     
 
 }
-#space-flight-finder {
+
+.finderButtonDiv {
+ 
     display: flex;
-    width: 530px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
-    padding: 20px;
-    background: linear-gradient(to right, #000000, #363636, #131313);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -15px;
+
+}
+
+#space-flight-finder {
+    position: relative;
+    display: flex;
+    grid-column-gap: 0.25rem;
+    column-gap: 0.25rem;
     flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+
     
 }
 
 #space-flight-finder input[type="text"], #space-flight-finder input[type="date"] {
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #5d5d5d;
     border-radius: 5px;
     background-color: #1e1e1e;
     color: #fff;
-    width: 238px;
+    
 }
 
 #space-flight-finder input::placeholder {
@@ -530,10 +600,10 @@ height: auto;
 }
 
 #space-flight-finder button {
-    background-color: transparent;
+    background-color: #0B3D91;
     color: white;
     border: 2px solid #ffffff;
-    padding: 12px 20px;
+    padding: 15px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -550,6 +620,7 @@ height: auto;
     gap: 10px;
     color: #fff;
     padding: 5px;
+    width: 100%;
 }
 
 .trip-type label, .accommodations label {
@@ -558,3 +629,57 @@ height: auto;
     gap: 5px;
 }
 
+
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto auto;
+    
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2px;
+    font-size: 20px;
+    text-align: start;
+    color: #000;
+    border-radius: 10px;
+    width: 99%;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    padding: 10px;
+    width: 100%;
+
+  }
+  .grid-item1 {
+    background-color: #0B3D91;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+     font-weight: 200; 
+     display: flex; 
+     justify-content: center;
+      align-items: center;
+      line-height: 25px;
+  }
+
+  .tripContentItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+
+  }
