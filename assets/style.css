@@ -316,9 +316,8 @@ input[type="radio"], input[type="checkbox"] {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     width: 100%;
-    height: 250vh;
     padding: 5%;
     padding-left: 17%;
     padding-right: 17%;
@@ -678,7 +677,7 @@ height: auto;
     background-color: #0B3D91;
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 1.1em;
      font-weight: 200; 
@@ -690,7 +689,7 @@ height: auto;
   .tripCategories2 {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 5px;
+    grid-gap: 15px;
     padding: 10px;
     width: 100%;
 
@@ -709,6 +708,7 @@ height: auto;
       line-height: 20px;
       flex-direction: row;
       color: #000000;
+      height: 80px;
   }
 
   .tripContentItem {
