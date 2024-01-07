@@ -687,6 +687,29 @@ height: auto;
       align-items: center;
       line-height: 25px;
   }
+  .tripCategories2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+    width: 100%;
+
+  }
+  .grid-item2 {
+    background-color: #e9ecf1;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+     font-weight: 200; 
+     display: flex; 
+     justify-content: center;
+      align-items: stretch;
+      line-height: 20px;
+      flex-direction: row;
+      color: #000000;
+  }
 
   .tripContentItem {
     display: flex;
