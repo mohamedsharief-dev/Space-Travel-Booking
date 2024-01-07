@@ -76,7 +76,47 @@
         
     </div>
    <div class="heroRightDiv">
-  
+    <div class="heroText1">
+        <h1 class="sectionTitle" style="font-size: 3em; text-align: center; text-align: start;">Book Your Next <br>
+            Interstellar Adventure</h1>
+        <div id="space-flight-finder">
+            <!-- Origin and Destination -->
+            <input type="text" id="origin" placeholder="Departure Station">
+            <input type="text" id="destination" placeholder="Destination Planet">
+        
+            <!-- Date Pickers -->
+            <input type="date" id="departure-date">
+            <input type="date" id="return-date">
+        
+            <!-- Trip Type Selection -->
+            <div class="trip-type">
+                <label><input type="radio" name="trip-type" value="one-way"> One-Way</label>
+                <label><input type="radio" name="trip-type" value="round-trip" checked> Round-Trip</label>
+            </div>
+        
+            <!-- Spacecraft Selection -->
+            <select id="spacecraft">
+                <option value="">Select Spacecraft</option>
+                <option value="starship">Starship</option>
+                <option value="falcon-heavy">Falcon Heavy</option>
+                <option value="orion">Orion</option>
+                <option value="dragon">Dragon</option>
+            </select>
+        
+            <!-- Special Accommodations -->
+            <div class="accommodations">
+                <label><input type="checkbox" id="zero-gravity-experience"> Zero Gravity Experience</label>
+                <label>
+                <label><input type="checkbox" id="mars-rover-tour"> Mars Rover Tour</label>
+            </div>
+        
+            <!-- Search Button -->
+            <button id="search-space-flights">Book My Space Tour</button>
+        </div>
+        
+            <p class="sectionDescription" style="font-size: 1.2em; text-align: start !important; width: 100%;">Galactic Getaways offers the best vacation packages in the solar system. From the
+                moons of Jupiter to the rings of Saturn, we have it all. Book your next adventure today!</p>
+    </div>
     
    </div>
 </section>
