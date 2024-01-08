@@ -19,8 +19,8 @@ async function addDocument(collectionName, data) {
 
 // Example data to add
 const exampleData = {
-    Destination: "Space Interstellar Experience",
-    image: "Second.png",
+    Destination: "Loonar fifth generation", 
+    image: "Sixth.png",
     availableSeats: 503,
     departureDate: "2024-02-05",
     departureStation: "Earth - New York",
