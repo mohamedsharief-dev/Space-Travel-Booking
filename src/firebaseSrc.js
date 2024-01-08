@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./spacetravel-5de7a-firebase-adminsdk-70gmz-8c2a1b4c6d.json'); // Replace with the path to your service account key
+const serviceAccount = require('./spacetravel-5de7a-da7d3fdf2333.json'); // Replace with the path to your service account key
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
@@ -20,7 +20,7 @@ async function addDocument(collectionName, data) {
 // Example data to add
 const exampleData = {
     Destination: "Space Interstellar Experience",
-    image: "Third.png",
+    image: "Second.png",
     availableSeats: 503,
     departureDate: "2024-02-05",
     departureStation: "Earth - New York",
