@@ -30,7 +30,7 @@ function renderTrips(trips) {
 
     // Create the HTML structure for each card using the trip data
     gridItem.innerHTML = `
-      <img class="imageitem" src="/assets/images/First.png" alt="">
+      <img class="imageitem" src="/assets/images/${trip.image}" alt="">
       <div class="tripContentItem">
         <h3>${trip.Destination}</h3>
         <div class="pricediv">

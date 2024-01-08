@@ -7,11 +7,11 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Function to add data to Firestore
-async function addDocument(collectionName, documentId, data) {
+// Function to add data to Firestore with an auto-generated document ID
+async function addDocument(collectionName, data) {
   try {
-    await db.collection(collectionName).doc(documentId).set(data);
-    console.log(`Document ${documentId} added successfully.`);
+    const docRef = await db.collection(collectionName).add(data);
+    console.log(`Document added successfully with ID: ${docRef.id}`);
   } catch (error) {
     console.error('Error adding document:', error);
   }
@@ -19,20 +19,20 @@ async function addDocument(collectionName, documentId, data) {
 
 // Example data to add
 const exampleData = {
-    DocumentID: "ThTBIVcxmcRYn6t63n0M",
-    Destination: "Mars 2",
-    availableSeats: 403,
+    Destination: "Space Interstellar Experience",
+    image: "Third.png",
+    availableSeats: 503,
     departureDate: "2024-02-05",
     departureStation: "Earth - New York",
-    description: "To Mars and back",
+    description: "To mare5 and back",
     price: "125,000$ USD",
     returnDate: "2024-03-05",
     spacecraft: "Falcon-F9",
     tripType: "oneWay"
-  // ... other fields
+    // ... other fields
 };
 
 // Example usage of the addDocument function
-addDocument('trips', 'ThTBIVcxmcRYn6t63n0M', exampleData);
+addDocument('Trips', exampleData);
 
 // Add more functions or logic as needed for your application
