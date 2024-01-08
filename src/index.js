@@ -4,12 +4,12 @@ import { onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDjoXCuxMjt9T4SiPJCeeYR5ZeEj06TlHs",
-  authDomain: "spacetravel-5de7a.firebaseapp.com",
-  projectId: "spacetravel-5de7a",
-  storageBucket: "spacetravel-5de7a.appspot.com",
-  messagingSenderId: "837488187883",
-  appId: "1:837488187883:web:55668ad1dc38157984e1ae"
+  apiKey: "process.env.FIREBASE_API_KEY",
+  authDomain: "process.env.FIREBASE_AUTH_DOMAIN",
+  projectId: "process.env.FIREBASE_PROJECT_ID",
+  storageBucket: "process.env.FIREBASE_STORAGE_BUCKET",
+  messagingSenderId: "process.env.FIREBASE_MESSAGING_SENDER_ID",
+  appId: "process.env.FIREBASE_APP_ID"
 };
 
 
