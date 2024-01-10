@@ -14,14 +14,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Function to fetch data from Firestore
+// Function to fetch Trips from Firestore
 async function fetchTrips() {
   const tripsCollection = collection(db, 'Trips');
   const snapshot = await getDocs(tripsCollection);
   return snapshot.docs.map(doc => doc.data());
 }
 
-// Function to render data in HTML
+// Function to render Trip data in HTML
 function renderTrips(trips) {
   const gridContainer = document.querySelector('.grid-container');
 
@@ -46,8 +46,50 @@ function renderTrips(trips) {
   });
 }
 
+
 // Call the functions to populate the cards when the page loads
 document.addEventListener('DOMContentLoaded', async () => {
   const trips = await fetchTrips();
   renderTrips(trips);
 });
+
+
+
+// Function to fetch TripCategories from Firestore
+async function fetchtripCategories() {
+  const tripCategoriesCollection = collection(db, 'tripCategories');
+  const snapshot = await getDocs(tripCategoriesCollection);
+  return snapshot.docs.map(doc => doc.data());
+}
+
+// Function to render Trip data in HTML
+function renderTripCategories(tripCats) {
+  const tripCategories2 = document.querySelector('.tripCategories2');
+
+  tripCats.forEach(tripCat => {
+    const gridItem2 = document.createElement('div');
+    gridItem2.classList.add('grid-item2');
+
+    // Create the HTML structure for each card using the trip data
+    gridItem2.innerHTML = `
+      <img class="imageitem" src="/assets/images/${tripCat.Image}" alt="">
+      <div class="tripContentItem">
+        <h3>${tripCat.CategoryID}</h3>
+        <div class="pricediv">
+        </div>
+        <p>${tripCat.MinimumDuration}</p>
+      
+      </div>
+    `;
+
+    tripCategories2.appendChild(gridItem2);
+  });
+}
+
+
+// Call the functions to populate the cards when the page loads
+document.addEventListener('DOMContentLoaded', async () => {
+  const tripCats = await fetchtripCategories();
+  renderTripCategories(tripCats);
+});
+
