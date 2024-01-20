@@ -8,6 +8,7 @@ module.exports = {
     bundle: './src/index.js',
     bundleLogin: './src/login.js',
     fetchTrips: './src/fetchTrips.js',
+
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
